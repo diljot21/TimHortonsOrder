@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Title of the Website -->
+        <title>Tim Horton's Order</title>
+        <!-- To connect to the CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <!-- This is the container class which provides equality for all HTML containers elements -->
+        <div class="container">
+            <!-- Source of the logo: https://www.kisspng.com/png-logo-tim-hortons-cappuccino-fizzy-drinks-coquitlam-5973315/preview.html -->
+            <div class="header"><img src="logo.jpg" alt=""></div>
+
+            <div><h1>Welcome to Time Horton's</h1></div>
+
+            <!-- This div class holds the form inside -->
+            <div class="info">
+                <!-- Form 1 for the order of the coffee sending the action to order.php using POST method -->
+                <form name="form1" action="Order.do" method="POST">
+                    <table>
+                        <tr>
+                            <td colspan="2">Give us some numbers...</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Coffees:</td>
+                            <!-- asking for input of number of coffees -->
+                            <td><input type="number" name="coffeeNumber" placeholder="0" min="1" required></td>
+                        </tr>
+                        <tr>
+                            <td>Size:</td>
+                            <td>
+                                <!-- Using dropdown list for size selection -->
+                                <select name="size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                    <option value="extralarge">Extra Large</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>How many creams?</td>
+                            <td><input type="number" name="creams" placeholder="0" min="0" max="10"></td>
+                        </tr>
+                        <tr>
+                            <td>How many sugars?</td>
+                            <td><input type="number" name="sugars" placeholder="0" min="0" max="10"></td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit" name="submit1" value="submit1">SUBMIT</button></td>
+                            <td> </td>
+                        </tr>
+                    </table>
+                </form>
+                <!-- Form 2 for the slang version order of the coffee sending the action to order.php using POST method -->
+                <form name="form2" action="Order.do" method="POST">
+                    <table>
+                        <tr>
+                            <td>...or use the slang!</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- asking for input of number of coffees -->
+                                <input type="number" name="coffeeNumber" placeholder="0" min="1" required>
+                                <select name="size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                    <option value="extralarge">Extra Large</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Using radio button for slang version of selection -->
+                                <input type="radio" name="slang" value="regular" checked> Regular <br>
+                                <input type="radio" name="slang" value="doubledouble"> Double Double <br>
+                                <input type="radio" name="slang" value="tripletriple"> Triple Triple <br>
+                                <input type="radio" name="slang" value="black"> Black <br>
+                                <input type="radio" name="slang" value="b1s"> Black One Sugar <br>
+                                <input type="radio" name="slang" value="b2s"> Black Two Sugar <br>
+                                <input type="radio" name="slang" value="b3s"> Black Three Sugar <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit" name="submit2" value="submit2">SUBMIT</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

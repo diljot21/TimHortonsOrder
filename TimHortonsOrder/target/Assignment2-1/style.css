@@ -1,0 +1,65 @@
+body{
+    background-color: orange;
+}
+
+/* The style for the container of the website */
+.container{
+    width: 100%;
+}
+
+/* Header in the firstpage */
+.header{
+    width: 100%;
+    background-color: white;
+}
+.header img{
+    width: 100%;
+    height: 350px;
+}
+
+/* This class if for the div that contains forms */
+.info{
+    width: 100%;
+}
+
+table{
+    padding: 30px;
+    border: 2px solid black;
+}
+
+form{
+    width: 100%;
+}
+
+/* For the php file details of the order */
+.detail{
+    width: 100%;
+    padding-top: 50px;
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* This 4 class image are for the size of the cup */
+.small img{
+    height: 300px;
+    width: 190px;
+}
+
+.medium img{
+    height: 320px;
+    width: 210px;
+}
+
+.large img{
+    height: 350px;
+    width: 250px;
+}
+
+.extralarge img{
+    height: 390px;
+    width: 280px;
+}
